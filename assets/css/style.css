@@ -18,6 +18,9 @@ time, mark, audio, span, video {
    font-size: 100%;
    background: transparent;
 }
+body{
+  font-family: 'Mulish', sans-serif;
+}
 table {
    border-collapse: collapse;
    border-spacing: 0;
@@ -54,4 +57,248 @@ a{
 }
 a:hover{
   text-decoration: none;
+}
+
+
+/* sidebar csss  */
+
+.main-area {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sidebar-area {
+	flex: 0 0 15%;
+	height: 100vh;
+  background: #363740;
+}
+
+.logo {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.menu ul li a {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	color: #DDE2FF;
+	padding: 18px 32px;
+	display: block;
+	border-left: 3px solid transparent;
+	display: flex;
+	gap: 15px;
+}
+
+.menu ul li a.active,
+.menu ul li a:hover{ 
+	background: #464646; 
+	border-left: 3px solid #ddd;
+}
+
+.mt-custom {
+	margin-top: 45px;
+	border-top: 1px solid #4A4A4A;
+}
+
+
+/* main content css  */
+/* header css  */
+
+.main-content-area {
+	flex: 0 0 85%;
+	background: #F7F8FC;
+	height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+} 
+
+.header-area {
+	display: flex;
+	justify-content: space-between; 
+  align-items: center;
+}
+
+.header-title h3 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: 0.3px;
+	color: #252733;
+}
+
+.header-user {
+	display: flex;
+	align-items: center;
+}
+
+.header-user ul {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.mr-border {
+	margin-right: 15px;
+	border-right: 1px solid #ddd;
+	padding-right: 15px;
+}
+
+.header-user-img a {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: right;
+	letter-spacing: 0.2px;
+	color: #252733;
+	display: flex;
+	align-items: center;
+	gap: 9px;
+}
+
+/* card css  */
+
+.card-area {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  margin-top: 54px;
+}
+
+.single-card {
+	background: #FFFFFF;
+	border: 1px solid #DFE0EB;
+	border-radius: 8px;
+	flex: 0 0 23%;
+	padding: 24px 0;
+	text-align: center;
+	cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.single-card p {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 19px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.4px;
+	color: #9FA2B4;
+	margin-bottom: 12px;
+}
+
+.single-card h2 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+	text-align: center;
+	letter-spacing: 1px;
+	color: #252733;
+}
+
+
+.single-card:hover{
+	border: 1px solid #3751FF;  
+}
+.single-card:hover h2{
+  color: #3751FF;
+}
+.single-card:hover p{
+  color: #3751FF;
+}
+
+
+/* account info css  */
+.account-info-area {
+	margin-top: 26px;
+	display: flex;
+	justify-content: space-between; 
+}
+
+.account-card-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+	padding:  32px;
+}
+
+.account-status,
+.receipt-box {
+	flex: 0 0 49%;
+	background: #FFFFFF;
+	border: 1px solid #DFE0EB;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+
+.receipt-data li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 30px;
+	border-bottom: 1px solid #ddd;
+}
+
+.receipt-data li p {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	color: #252733;
+}
+
+.receipt-data li span {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: right;
+	letter-spacing: 0.2px;
+	color: #9FA2B4;
+}
+
+.account-check .receipt-data li {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding: 20px 30px;
+	border-bottom: 1px solid #ddd;
+	gap: 16px;
+}
+
+.account-check ul li label {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	color: #252733;
+}
+
+/* video area css  */
+.video-area {
+	background: #FFFFFF;
+	border: 1px solid #DFE0EB;
+	border-radius: 8px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.video-box {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+  padding-bottom: 30px;
+}
+
+.video {
+	flex: 0 0 50%;
 }
