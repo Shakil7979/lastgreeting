@@ -111,8 +111,10 @@ a:hover{
 	flex: 0 0 85%;
 	background: #F7F8FC;
 	height: 100vh;
-  padding: 30px;
-  box-sizing: border-box;
+	padding: 30px;
+	box-sizing: border-box;
+	overflow-y: scroll;
+	scrollbar-width: none;
 } 
 
 .header-area {
