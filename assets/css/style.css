@@ -273,7 +273,7 @@ a:hover{
 	align-items: center;
 	padding: 20px 30px;
 	border-bottom: 1px solid #ddd;
-	gap: 16px;
+	gap: 24px;
 }
 
 .account-check ul li label {
@@ -284,6 +284,51 @@ a:hover{
 	letter-spacing: 0.2px;
 	color: #252733;
 }
+
+.round {
+	position: relative;
+  }
+  
+  .round label {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 20px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 20px;
+  }
+  
+  .round label::after {
+	border: 2px solid #fff;
+	border-top: none;
+	border-right: none;
+	content: "";
+	height: 6px;
+	left: 4px;
+	opacity: 0;
+	position: absolute;
+	top: 5px;
+	transform: rotate(-45deg);
+	width: 12px;
+}
+  
+  .round input[type="checkbox"] {
+	visibility: hidden;
+  }
+  
+  .round input[type="checkbox"]:checked + label {
+	background-color: #3751FF;
+	border-color: #3751FF;
+}
+  
+  .round input[type="checkbox"]:checked + label:after {
+	opacity: 1;
+  }
+  
+  
 
 /* video area css  */
 .video-area {
@@ -303,4 +348,132 @@ a:hover{
 
 .video {
 	flex: 0 0 50%;
+}
+
+
+/* Data table css  */
+
+.card {
+	background: #FFFFFF;
+	border: 1px solid #DFE0EB;
+	border-radius: 8px;
+	margin-top: 54px;
+}
+
+.filter-item p {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	color: #4B506D;
+}
+
+.table-filter {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.filter-item {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.table {
+	width: 100%;
+}
+
+.table thead tr th {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.2px;
+	color: #9FA2B4;
+	padding: 12px 32px;
+	text-align: left; 
+}
+
+.table tbody tr,
+.table thead tr {
+	border-bottom: 1.5px solid #DFE0EB; 
+}
+
+.table tbody tr td {
+	padding: 26px 32px; 
+}
+.d-flex {
+	display: flex;
+	gap: 15px;
+	align-items: center; 
+}
+.table tbody tr td p,
+.table-f p {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	color: #252733;
+}
+
+.table-f span {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.1px;
+	color: #C5C7CD; 
+	text-align: left;
+}
+
+.table-f {
+	text-align: left;
+} 
+.table-badge {
+	background: #29CC97;
+	border-radius: 100px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 11px;
+	line-height: 14px; 
+	text-align: center;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 5px 12px;
+}
+
+.yellow-badge{
+	background: #FEC400;
+} 
+.red-badge{
+	background: #F12B2C;
+}
+
+.table-arrow-area {
+	display: flex;
+	gap: 24px;
+	justify-content: flex-end;
+	padding: 20px 32px 20px 0;
+	align-items: center;
+}
+
+.table-arrow-area p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.3px;
+	color: #9FA2B4;
+}
+
+.table tbody tr td a { 
+	display: flex;
+	justify-content: flex-end;
 }
