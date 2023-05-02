@@ -16,3 +16,7 @@ $(document).on('click','.bars_icon',function(){
 $(document).on('click','.sidebar_close',function(){
     $('.sidebar-area').css({'left':'-100%'});
 });
+
+$(document).on('click','.noti_btn',function(){
+    $('.noti-toggle').slideToggle();
+});

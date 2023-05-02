@@ -166,7 +166,7 @@ a:hover{
 	align-items: center;
 }
 
-.header-user ul {
+.header-user > ul {
 	display: flex;
 	align-items: center;
 	gap: 30px;
@@ -482,7 +482,7 @@ a:hover{
 	letter-spacing: 0.5px;
 	text-transform: uppercase;
 	color: #FFFFFF;
-	padding: 5px 12px;
+	padding: 5px 14px;
 }
 
 .yellow-badge{
@@ -664,4 +664,61 @@ a:hover{
 	width: 100%;
 	box-sizing: border-box;
 	border: none;
+}
+
+
+
+
+.account-status .account-card-title { 
+	padding: 32px 32px 0px 32px;
+	margin-bottom: 0px;
+}
+
+.table tbody tr td > p { 
+	margin-top: -15px;
+}
+
+.header-user ul li {
+	position: relative;
+}
+
+.noti-toggle {
+	position: absolute;
+	background: #fff;
+	padding: 23px;
+	border-radius: 8px;
+	right: 0;
+	top: 100%;
+	border: 1px solid #DFE0EB;
+	width: 151px;
+	display: none;
+	z-index: 99;
+}
+
+.noti-toggle > ul {
+	display: flex;
+	flex-direction: column; 
+	flex-wrap: wrap;
+}
+
+.noti-toggle ul li{
+	margin-bottom: 12px;
+}
+
+.noti-toggle ul li h3 {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	color: #252733;
+}
+
+.noti-toggle ul li p {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 20px; 
+	letter-spacing: 0.2px;
+	color: #9FA2B4;
 }
