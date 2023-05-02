@@ -20,3 +20,7 @@ $(document).on('click','.sidebar_close',function(){
 $(document).on('click','.noti_btn',function(){
     $('.noti-toggle').slideToggle();
 });
+
+$(document).on('click','.search_btn',function(){
+    $('.search-field-box').slideToggle();
+});

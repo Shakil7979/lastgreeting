@@ -24,6 +24,11 @@
         font-size: 16px; 
         margin-bottom: 0;
     }
+    .table tbody tr, .table thead tr {
+        border-bottom: 1.5px solid #DFE0EB;
+        display: flex;
+        align-items: center;
+    }
     .single-card h2 { 
         font-size: 24px; 
     }
