@@ -746,6 +746,9 @@ a:hover{
 
   .search-field-box button {
 	position: relative;
+	background: none;
+	border: none;
+	padding: 0;
 }
   
   .search-box:focus-within {
@@ -762,6 +765,8 @@ a:hover{
 	padding: 8px 8px 8px 37px;
 	border: 1px solid #C1C1C1;
 	font-size: 18px;
+	vertical-align: 4px; 
+	width: 255px;
 }
   
   .search-field-box button:hover {
